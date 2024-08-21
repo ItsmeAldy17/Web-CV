@@ -1,318 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>About Personal Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
     <!-- Template Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700"
+      rel="stylesheet"
+    />
 
     <!-- Template CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/preloader.min.css" rel="stylesheet">
-    <link href="css/circle.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/preloader.min.css" rel="stylesheet" />
+    <link href="css/circle.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
 
     <!-- CSS Skin File -->
-    <link href="css/skins/blue.css" rel="stylesheet">
+    <link href="css/skins/blue.css" rel="stylesheet" />
 
     <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
-    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
-    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="blue"
+      href="css/skins/blue.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="green"
+      href="css/skins/green.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="yellow"
+      href="css/skins/yellow.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="blueviolet"
+      href="css/skins/blueviolet.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="goldenrod"
+      href="css/skins/goldenrod.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="magenta"
+      href="css/skins/magenta.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="orange"
+      href="css/skins/orange.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="purple"
+      href="css/skins/purple.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="red"
+      href="css/skins/red.css"
+    />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      title="yellowgreen"
+      href="css/skins/yellowgreen.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
 
     <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
-</head>
+  </head>
 
-<body class="about">
+  <body class="about">
     <!-- Header Starts -->
     <header class="header" id="navbar-collapse-toggle">
-        <!-- Fixed Navigation Starts -->
-        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-            <li class="icon-box">
-                <i class="fa fa-home"></i>
-                <a href="index.html">
-                    <h2>Home</h2>
-                </a>
-            </li>
-            <li class="icon-box active">
-                <i class="fa fa-user"></i>
-                <a href="about.html">
-                    <h2>About</h2>
-                </a>
-            </li>
-            <li class="icon-box">
-                <i class="fa fa-briefcase"></i>
-                <a href="portfolio.html">
-                    <h2>Portfolio</h2>
-                </a>
-            </li>
-            <li class="icon-box">
-                <i class="fa fa-envelope-open"></i>
-                <a href="contact.html">
-                    <h2>Contact</h2>
-                </a>
-            </li>
-        </ul>
-        <!-- Fixed Navigation Ends -->
-        <!-- Mobile Menu Starts -->
-        <nav role="navigation" class="d-block d-lg-none">
-            <div id="menuToggle">
-                <ul class="list-unstyled" id="menu">
-                    <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                    <li class="active"><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Mobile Menu Ends -->
+      <!-- Fixed Navigation Starts -->
+      <ul
+        class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1"
+      >
+        <li class="icon-box">
+          <i class="fa fa-home"></i>
+          <a href="index.html">
+            <h2>Home</h2>
+          </a>
+        </li>
+        <li class="icon-box active">
+          <i class="fa fa-user"></i>
+          <a href="about.html">
+            <h2>About</h2>
+          </a>
+        </li>
+        <li class="icon-box">
+          <i class="fa fa-briefcase"></i>
+          <a href="portfolio.html">
+            <h2>Portfolio</h2>
+          </a>
+        </li>
+        <li class="icon-box">
+          <i class="fa fa-envelope-open"></i>
+          <a href="contact.html">
+            <h2>Contact</h2>
+          </a>
+        </li>
+      </ul>
+      <!-- Fixed Navigation Ends -->
     </header>
     <!-- Header Ends -->
+    <!--Bottom Navigation Starts-->
+    <div class="bottom-nav">
+      <a href="index.html"><i class="fa fa-home"></i>Home</a>
+      <a href="about.html" class="active"
+        ><i class="fa fa-user active"></i> <span>About</span></a
+      >
+      <a href="portfolio.html"
+        ><i class="fa fa-briefcase"></i> <span>Portofolio</span></a
+      >
+      <a href="contact.html"
+        ><i class="fa fa-envelope-open"></i> <span>Contact</span></a
+      >
+    </div>
+    <!--Bottom Navigation End-->
+
     <!-- Page Title Starts -->
-    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-        <h1>ABOUT <span>ME</span></h1>
-        <span class="title-bg">Resume</span>
+    <section
+      class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1"
+    >
+      <h1>ABOUT <span>ME</span></h1>
+      <span class="title-bg">Resume</span>
     </section>
     <!-- Page Title Ends -->
     <!-- Main Content Starts -->
-    <section class="main-content revealator-slideup revealator-once revealator-delay1">
-        <div class="container">
+    <section
+      class="main-content revealator-slideup revealator-once revealator-delay1"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- Personal Info Starts -->
+          <div class="col-12 col-lg-5 col-xl-6">
             <div class="row">
-                <!-- Personal Info Starts -->
-                <div class="col-12 col-lg-5 col-xl-6">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="text-uppercase custom-title mb-0 ft-wt-600">Personal Info</h3>
-                        </div>
-                        <div class="col-12 d-block d-sm-none">
-                            <img src="img/image-profile-jas.jpg" class="img-fluid main-img-mobile" alt="profile-picture" />
-                        </div>
-                        <div class="col-6">
-                            <ul class="about-list list-unstyled open-sans-font">
-                                <li> <span class="title">First name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Aldy</span> </li>
-                                <li> <span class="title">Last name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Ardiansyah</span> </li>
-                                <li> <span class="title">Nationality :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Indonesia</span> </li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="about-list list-unstyled open-sans-font">
-                                <li> <span class="title">Address :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Bandung, West Java, Indonesia</span> </li>
-                                <li> <span class="title">Email :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">aldyardiansyah628@gmail.com</span> </li>
-                                <li> <span class="title">Languages :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Indonesia, English</span> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Personal Info Ends -->
-                <!-- Boxes Starts -->
-                <div class="col-12 col-lg-7 col-xl-6 mt-5 mt-lg-0">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="box-stats with-margin">
-                                <h3 class="poppins-font position-relative">2</h3>
-                                <p class="open-sans-font m-0 position-relative text-uppercase">years of <span class="d-block">experience</span></p>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="box-stats with-margin">
-                                <h3 class="poppins-font position-relative">7</h3>
-                                <p class="open-sans-font m-0 position-relative text-uppercase">completed <span class="d-block">projects</span></p>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="box-stats">
-                                <h3 class="poppins-font position-relative">3</h3>
-                                <p class="open-sans-font m-0 position-relative text-uppercase">Happy<span class="d-block">customers</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Boxes Ends -->
+              <div class="col-12">
+                <h3 class="text-uppercase custom-title mb-0 ft-wt-600">
+                  Personal Info
+                </h3>
+              </div>
+              <div class="col-12 d-block d-sm-none">
+                <img
+                  src="img/image-profile-jas.jpg"
+                  class="img-fluid main-img-mobile"
+                  alt="profile-picture"
+                />
+              </div>
+              <div class="col-6">
+                <ul class="about-list list-unstyled open-sans-font">
+                  <li>
+                    <span class="title">First name :</span>
+                    <span
+                      class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                      >Aldy</span
+                    >
+                  </li>
+                  <li>
+                    <span class="title">Last name :</span>
+                    <span
+                      class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                      >Ardiansyah</span
+                    >
+                  </li>
+                  <li>
+                    <span class="title">Nationality :</span>
+                    <span
+                      class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                      >Indonesia</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="about-list list-unstyled open-sans-font">
+                  <li>
+                    <span class="title">Address :</span>
+                    <span
+                      class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                      >Bandung, West Java, Indonesia</span
+                    >
+                  </li>
+                  <li>
+                    <span class="title">Email :</span>
+                    <span
+                      class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                      >aldyardiansyah628@gmail.com</span
+                    >
+                  </li>
+                  <li>
+                    <span class="title">Languages :</span>
+                    <span
+                      class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"
+                      >Indonesia, English</span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-            <hr class="separator">
-            <!-- Skills Starts -->
+          </div>
+          <!-- Personal Info Ends -->
+          <!-- Boxes Starts -->
+          <div class="col-12 col-lg-7 col-xl-6 mt-5 mt-lg-0">
             <div class="row">
-                <div class="col-12">
-                    <h3 class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600">My Skills</h3>
+              <div class="col-6">
+                <div class="box-stats with-margin">
+                  <h3 class="poppins-font position-relative">2</h3>
+                  <p
+                    class="open-sans-font m-0 position-relative text-uppercase"
+                  >
+                    years of <span class="d-block">experience</span>
+                  </p>
                 </div>
-                <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                    <div class="tech-stack" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <img src="img/stack/c++.png" alt="C/C++" width="100" height="100">
-                        <h6 class="text-uppercase open-sans-font mt-2 mt-sm-4">C/C++</h6>
-                    </div>                                                       
+              </div>
+              <div class="col-6">
+                <div class="box-stats with-margin">
+                  <h3 class="poppins-font position-relative">7</h3>
+                  <p
+                    class="open-sans-font m-0 position-relative text-uppercase"
+                  >
+                    completed <span class="d-block">projects</span>
+                  </p>
                 </div>
-                <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                    <div class="tech-stack" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <img src="img/stack/css-html.png" alt="CSS & HTML" width="150" height="100">
-                        <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">CSS & HTML</h6>
-                    </div>
+              </div>
+              <div class="col-6">
+                <div class="box-stats">
+                  <h3 class="poppins-font position-relative">3</h3>
+                  <p
+                    class="open-sans-font m-0 position-relative text-uppercase"
+                  >
+                    Happy<span class="d-block">customers</span>
+                  </p>
                 </div>
-                <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                    <div class="tech-stack" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <img src="img/stack/javascript.png" alt="JavaScript" width="150" height="100">
-                        <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">JavaScript</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                    <div class="tech-stack" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <img src="img/stack/php.png" alt="PHP" width="150" height="100">
-                        <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">PHP</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                    <div class="tech-stack" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <img src="img/stack/sql.png" alt="SQL" width="100" height="100">
-                        <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">SQL</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                    <div class="tech-stack" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <img src="img/stack/python.png" alt="Python" width="100" height="100">
-                        <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">Python</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                    <div class="tech-stack" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <img src="img/stack/java.png" alt="Java" width="150" height="100">
-                        <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">Java</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                    <div class="tech-stack" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                        <img src="img/stack/kotlin.png" alt="Kotlin" width="150" height="100">
-                        <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">Kotlin</h6>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!-- Skills Ends -->
-            <hr class="separator mt-1">
-            <!-- Experience & Education Starts -->
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600">Experience <span>&</span> Education</h3>
-                </div>
-                <div class="col-lg-6 m-15px-tb">
-                    <div class="resume-box">
-                        <ul>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2022</span>
-                                <h5 class="poppins-font text-uppercase">Desktop Game App Developer <span class="place open-sans-font">Space Invaders</span></h5>
-                                <p class="open-sans-font">Develop a desktop game application in collaboration with other friends for Even Semester Final Project</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2022</span>
-                                <h5 class="poppins-font text-uppercase">Website Developer <span class="place open-sans-font">LearnWave</span></h5>
-                                <p class="open-sans-font">Developing a e-learning website for Even Semester Final Project</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2022</span>
-                                <h5 class="poppins-font text-uppercase">Website Developer <span class="place open-sans-font">OceanOne</span></h5>
-                                <p class="open-sans-font">Developing a cloning website for Odd Semester Final Project</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2021</span>
-                                <h5 class="poppins-font text-uppercase">Mobile Game App Developer <span class="place open-sans-font">Dori</span></h5>
-                                <p class="open-sans-font">Developing a mobile game application for children for Even Semester Final Project</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2021</span>
-                                <h5 class="poppins-font text-uppercase">Mobile App Developer <span class="place open-sans-font">MountCak</span></h5>
-                                <p class="open-sans-font">Developing mobile applications for hiking enthusiasts using flutter in collaboration with friends</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2020</span>
-                                <h5 class="poppins-font text-uppercase">UI Designer <span class="place open-sans-font">Dribble</span></h5>
-                                <p class="open-sans-font">Design Mobile Apps</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2020</span>
-                                <h5 class="poppins-font text-uppercase">Chairman <span class="place open-sans-font">Website Hantaran Pernikahan</span></h5>
-                                <p class="open-sans-font">Chairman of the client website creation</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 m-15px-tb">
-                    <div class="resume-box">
-                        <ul>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2022 - Present</span>
-                                <h5 class="poppins-font text-uppercase">Vocational School <span class="place open-sans-font">Gadjah Mada University</span></h5>
-                                <p class="open-sans-font">Software Engineering Technology</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2021</span>
-                                <h5 class="poppins-font text-uppercase">Vocational High School <span class="place open-sans-font">SMKN 1 Cimahi</span></h5>
-                                <p class="open-sans-font">Graduated</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2021</span>
-                                <h5 class="poppins-font text-uppercase">Oracle Academy<span class="place open-sans-font">Online Course Certification - Java</span></h5>
-                                <p class="open-sans-font">Passed with best results</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fa fa-graduation-cap"></i>
-                                </div>
-                                <span class="time open-sans-font text-uppercase">2020</span>
-                                <h5 class="poppins-font text-uppercase">Dicoding Academy <span class="place open-sans-font">Online Course Certification - Website</span></h5>
-                                <p class="open-sans-font">Passed with pretty good results</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Experience & Education Ends -->
+          </div>
+          <!-- Boxes Ends -->
         </div>
+        <hr class="separator" />
+        <!-- Skills Starts -->
+        <div class="row">
+          <div class="col-12">
+            <h3
+              class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600"
+            >
+              My Skills
+            </h3>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-sm-5">
+            <div class="tech-stack">
+
+              <img
+                src="img/stack/c++.png"
+                alt="C/C++"
+                width="100"
+                height="100"
+              />
+              <h6 class="text-uppercase open-sans-font mt-2 mt-sm-4">C/C++</h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-sm-5">
+            <div class="tech-stack">
+
+              <img
+                src="img/stack/css-html.png"
+                alt="CSS & HTML"
+                width="150"
+                height="100"
+              />
+              <h6
+                class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
+              >
+                CSS & HTML
+              </h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-sm-5">
+            <div class="tech-stack">
+
+              <img
+                src="img/stack/javascript.png"
+                alt="JavaScript"
+                width="150"
+                height="100"
+              />
+              <h6
+                class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
+              >
+                JavaScript
+              </h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-sm-5">
+            <div class="tech-stack">
+
+              <img src="img/stack/php.png" alt="PHP" width="150" height="100" />
+              <h6
+                class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
+              >
+                PHP
+              </h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-sm-5">
+            <div class="tech-stack">
+
+              <img src="img/stack/sql.png" alt="SQL" width="100" height="100" />
+              <h6
+                class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
+              >
+                SQL
+              </h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-sm-5">
+            <div class="tech-stack">
+
+              <img
+                src="img/stack/python.png"
+                alt="Python"
+                width="100"
+                height="100"
+              />
+              <h6
+                class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
+              >
+                Python
+              </h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-sm-5">
+            <div class="tech-stack">
+
+              <img
+                src="img/stack/java.png"
+                alt="Java"
+                width="150"
+                height="100"
+              />
+              <h6
+                class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
+              >
+                Java
+              </h6>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 mb-sm-5">
+            <div class="tech-stack">
+
+              <img
+                src="img/stack/kotlin.png"
+                alt="Kotlin"
+                width="150"
+                height="100"
+              />
+              <h6
+                class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
+              >
+                Kotlin
+              </h6>
+            </div>
+          </div>
+        </div>
+        <!-- Skills Ends -->
+        <hr class="separator mt-1" />
+        <!-- Experience & Education Starts -->
+        <div class="row">
+          <div class="col-12">
+            <h3
+              class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600"
+            >
+              Experience <span>&</span> Education
+            </h3>
+          </div>
+          <div class="col-lg-6 m-15px-tb">
+            <div class="resume-box">
+              <ul>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2022</span>
+                  <h5 class="poppins-font text-uppercase">
+                    Desktop Game App Developer
+                    <span class="place open-sans-font">Space Invaders</span>
+                  </h5>
+                  <p class="open-sans-font">
+                    Develop a desktop game application in collaboration with
+                    other friends for Even Semester Final Project
+                  </p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2022</span>
+                  <h5 class="poppins-font text-uppercase">
+                    Website Developer
+                    <span class="place open-sans-font">LearnWave</span>
+                  </h5>
+                  <p class="open-sans-font">
+                    Developing a e-learning website for Even Semester Final
+                    Project
+                  </p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2022</span>
+                  <h5 class="poppins-font text-uppercase">
+                    Website Developer
+                    <span class="place open-sans-font">OceanOne</span>
+                  </h5>
+                  <p class="open-sans-font">
+                    Developing a cloning website for Odd Semester Final Project
+                  </p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2021</span>
+                  <h5 class="poppins-font text-uppercase">
+                    Mobile Game App Developer
+                    <span class="place open-sans-font">Dori</span>
+                  </h5>
+                  <p class="open-sans-font">
+                    Developing a mobile game application for children for Even
+                    Semester Final Project
+                  </p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2021</span>
+                  <h5 class="poppins-font text-uppercase">
+                    Mobile App Developer
+                    <span class="place open-sans-font">MountCak</span>
+                  </h5>
+                  <p class="open-sans-font">
+                    Developing mobile applications for hiking enthusiasts using
+                    flutter in collaboration with friends
+                  </p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2020</span>
+                  <h5 class="poppins-font text-uppercase">
+                    UI Designer
+                    <span class="place open-sans-font">Dribble</span>
+                  </h5>
+                  <p class="open-sans-font">Design Mobile Apps</p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2020</span>
+                  <h5 class="poppins-font text-uppercase">
+                    Chairman
+                    <span class="place open-sans-font"
+                      >Website Hantaran Pernikahan</span
+                    >
+                  </h5>
+                  <p class="open-sans-font">
+                    Chairman of the client website creation
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 m-15px-tb">
+            <div class="resume-box">
+              <ul>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase"
+                    >2022 - Present</span
+                  >
+                  <h5 class="poppins-font text-uppercase">
+                    Vocational School
+                    <span class="place open-sans-font"
+                      >Gadjah Mada University</span
+                    >
+                  </h5>
+                  <p class="open-sans-font">Software Engineering Technology</p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2021</span>
+                  <h5 class="poppins-font text-uppercase">
+                    Vocational High School
+                    <span class="place open-sans-font">SMKN 1 Cimahi</span>
+                  </h5>
+                  <p class="open-sans-font">Graduated</p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2021</span>
+                  <h5 class="poppins-font text-uppercase">
+                    Oracle Academy<span class="place open-sans-font"
+                      >Online Course Certification - Java</span
+                    >
+                  </h5>
+                  <p class="open-sans-font">Passed with best results</p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <span class="time open-sans-font text-uppercase">2020</span>
+                  <h5 class="poppins-font text-uppercase">
+                    Dicoding Academy
+                    <span class="place open-sans-font"
+                      >Online Course Certification - Website</span
+                    >
+                  </h5>
+                  <p class="open-sans-font">Passed with pretty good results</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Experience & Education Ends -->
+      </div>
     </section>
     <!-- Main Content Ends -->
 
@@ -329,8 +578,5 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
-
-</body>
-
-
+  </body>
 </html>
