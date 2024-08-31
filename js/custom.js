@@ -155,4 +155,15 @@
 		});
 	});
 
+
+	/* ----------------------------------------------------------- */
+	/*  Mengembalikan navigasi tetap setelah menutup slideshow
+	/* ----------------------------------------------------------- */
+	document.querySelector('.nav-close').addEventListener('click', function () {
+		const navbar = document.getElementById('navbar-collapse-toggle');
+		navbar.style.display = 'block'; // Pastikan navbar ditampilkan
+		navbar.classList.add('revealator-slideup'); // Kelas asli untuk efek
+	});
+
+
 })(jQuery);
