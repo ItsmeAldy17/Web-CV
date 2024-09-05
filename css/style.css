@@ -34,6 +34,10 @@ hr.separator {
     max-width: 40%;
 }
 
+.img-fluid {
+    margin: 10px 0px 20px 0px;
+}
+
 .ft-wt-600 {
     font-weight: 600;
 }
@@ -48,7 +52,7 @@ hr.separator {
 
 .custom-title {
     padding-bottom: 15px;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 /*** Light Body ***/
@@ -91,6 +95,7 @@ body.light .title-bg {
 
 body.light.about .box-stats {
     border: 1px solid #ddd;
+
 }
 
 body.light.about .c100,
@@ -283,7 +288,7 @@ body.light hr.separator {
 }
 
 .bottom-nav a i.active {
-    color: #007bff;
+    color: #0d6efd;
     /* Same highlight color for the icon */
 }
 
@@ -672,10 +677,9 @@ body.light hr.separator {
 }
 
 .portfolio .slideshow figure {
-    width: 100%;
-    height: 100%;
+    width: 90%;
     background: #252525;
-    padding: 30px;
+    padding: 20px;
     overflow: auto;
     border-radius: 10px;
 }
@@ -780,8 +784,34 @@ body.light hr.separator {
 }
 
 /*** Contact ***/
-.contact .main-content {
-    padding-bottom: 85px;
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Ganti justify dengan center untuk teks */
+    width: 100%;
+    /* Sesuaikan lebar agar penuh */
+    padding: 0 20px;
+    box-sizing: border-box;
+    /* Memastikan padding tidak menambah ukuran total */
+}
+
+/* Tambahan untuk mengatur jarak antar elemen */
+.centered-content h3 {
+    margin-bottom: 1rem;
+    /* Sesuaikan jarak bawah dari judul */
+}
+
+.centered-content p {
+    margin-bottom: 1rem;
+    /* Sesuaikan jarak bawah dari paragraf */
+}
+
+.centered-content ul {
+    margin-top: 1rem;
+    /* Jarak atas dari list sosial media */
 }
 
 /* Left Side */
@@ -1019,6 +1049,18 @@ body.light hr.separator {
     .portfolio .container-portfolio {
         max-width: calc(100% - 195px);
     }
+
+    .home-details-container {
+        flex-direction: column-reverse;
+    }
+
+    .video-wrapper iframe {
+        width: 100%;
+        height: 250px;
+        /* Sesuaikan tinggi video pada layar kecil */
+        margin: 0;
+        padding: 0;
+    }
 }
 
 /* Adjust home details for medium screens */
@@ -1046,27 +1088,6 @@ body.light hr.separator {
         overflow: hidden;
     }
 
-    .btn:before {
-        font: 15px/1.2em;
-        color: #fff;
-        position: absolute;
-        height: 100%;
-        right: 25px;
-        top: 50%;
-        margin-top: -9px;
-        transition: all 0.3s;
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-
-    .btn:hover span {
-        transform: translateX(-10px);
-    }
-
-    .btn:hover:before {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 /* Make text smaller and better suited for mobile screens */
@@ -1103,10 +1124,7 @@ body.light hr.separator {
         padding: 10px 20px;
         font-size: 14px;
     }
-}
 
-/* Adjust button padding for tablet view */
-@media (max-width: 768px) {
     .btn.btn-eye {
         padding: 8px 16px;
         font-size: 13px;
@@ -1119,6 +1137,110 @@ body.light hr.separator {
         padding: 6px 12px;
         font-size: 12px;
     }
+
+    .value {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .box-stats h3 {
+        font-size: 18px;
+        /* Smaller size for mobile screens */
+    }
+
+    .box-stats p {
+        font-size: 14px;
+        /* Smaller size for mobile screens */
+        white-space: normal;
+        /* Allow text wrapping if necessary */
+    }
+
+    .col-6 {
+        flex: 0 0 100%;
+        /* Full width for each box */
+        max-width: 100%;
+        margin-bottom: 20px;
+        /* Space between boxes */
+    }
+
+    .personal-info .col-6 {
+        flex: 0 0 50%;
+        /* 50% width to keep two columns side by side */
+        max-width: 50%;
+    }
+
+    .nav-tabs {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-tabs .nav-item {
+        display: inline;
+        margin-right: 5px;
+        margin-bottom: -2px;
+    }
+
+    /* Custom Scrollbar */
+    .nav-tabs::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .nav-tabs::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+    }
+
+    .nav-tabs::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+
+    .video-wrapper {
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50%;
+
+    }
+
+    .video-wrapper iframe {
+        width: 100%;
+        height: 200px;
+        /* Sesuaikan tinggi video pada layar kecil */
+        margin: 0;
+    }
+
+}
+
+.nav-tabs .nav-link {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0;
+    white-space: nowrap;
+    border-radius: 5px 5px 0px 0px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #164984;
+    color: #fff;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff;
+    border-color: #ddd #ddd #fff;
+}
+
+.nav-tabs .nav-link.active:hover {
+    background-color: #fff;
+    color: #0d6efd;
 }
 
 /* Light theme styles for desktop navigation */
@@ -1137,6 +1259,7 @@ body.light hr.separator {
     body.light .header ul.icon-menu li.icon-box:hover i {
         color: #fff;
     }
+
 }
 
 /* Desktop Navigation */
@@ -1244,6 +1367,35 @@ body.light hr.separator {
 
 /* Media query untuk tampilan mobile kecil (320px hingga 359px) */
 @media (min-width: 320px) and (max-width: 359px) {
+    .home .home-details {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .home .home-details h1 {
+        font-size: 18px;
+        line-height: 1;
+
+    }
+
+    .home .home-details p {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .home .home-details h6 {
+        font-size: 12px;
+        margin-top: -1rem;
+
+    }
+
+    .home .home-details .btn {
+        padding: 8px 16px;
+        font-size: 16px;
+        margin-bottom: 2rem;
+    }
+
     .slideshow {
         display: flex;
         flex-direction: column;
@@ -1316,10 +1468,51 @@ body.light hr.separator {
         top: 70%;
         left: 106%;
     }
+
+    .video-wrapper {
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12%;
+        width: 85%;
+    }
+
+    .video-wrapper iframe {
+        width: 100%;
+        height: 150px;
+        /* Sesuaikan tinggi video pada layar kecil */
+        margin: 0;
+    }
 }
 
 /* Media query untuk tampilan mobile menengah (360px hingga 374px) */
 @media (min-width: 360px) and (max-width: 374px) {
+    .home .home-details {
+        max-width: 87%;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .home-details h1 {
+        font-size: 20px;
+        line-height: 1;
+
+    }
+
+    .home .home-details p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .home .home-details h6 {
+        font-size: 14px;
+        margin-top: -1rem;
+
+    }
+
     .slideshow {
         display: flex;
         flex-direction: column;
@@ -1405,6 +1598,21 @@ body.light hr.separator {
     .portfolio .slideshow ul>li {
         top: 60%;
         left: 93%;
+    }
+
+    .video-wrapper {
+        margin-top: -5%;
+        margin-left: 10%;
+        width: 87%;
+    }
+
+    .video-wrapper iframe {
+        height: 170px;
+    }
+
+    .centered-content {
+        padding: 0 30px;
+        text-align: justify;
     }
 }
 
@@ -1496,10 +1704,71 @@ body.light hr.separator {
         top: 55%;
         left: 91%;
     }
+
+    .home .home-details {
+        max-width: 87%;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .home-details h1 {
+        font-size: 20px;
+        line-height: 1;
+
+    }
+
+    .home .home-details p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .home .home-details h6 {
+        font-size: 14px;
+        margin-top: -1rem;
+
+    }
+
+    .video-wrapper {
+        margin-left: 11%;
+        width: 85%;
+    }
+
+    .video-wrapper iframe {
+        height: 170px;
+    }
+
+    .centered-content {
+        padding: 0 30px;
+        text-align: justify;
+    }
 }
 
 /* Media query untuk tampilan mobile besar (412px) */
 @media (min-width: 412px) {
+    .home .home-details {
+        max-width: 90%;
+        padding: 10px;
+        margin-top: 5%;
+    }
+
+    .home .home-details h1 {
+        font-size: 24px;
+        line-height: 1;
+
+    }
+
+    .home .home-details p {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .home .home-details h6 {
+        font-size: 16px;
+        margin-top: -1rem;
+
+    }
+
     .slideshow {
         display: flex;
         flex-direction: column;
@@ -1586,10 +1855,77 @@ body.light hr.separator {
         top: 55%;
         left: 86%;
     }
+
+    .video-wrapper {
+        margin-top: 5%;
+        margin-left: 11%;
+        width: 85%;
+    }
+
+    .video-wrapper iframe {
+        height: 200px;
+    }
+
+    .centered-content {
+        margin-top: 20%;
+        padding: 0 30px;
+        text-align: justify;
+    }
 }
 
 /* Media query untuk tablet dan laptop kecil (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .home .container-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        margin-left: -3%;
+    }
+
+    .home .home-details {
+        max-width: 100%;
+        margin-top: 10%;
+        padding-left: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .home-details h1 {
+        font-size: 30px;
+        line-height: 1;
+
+    }
+
+    .home .home-details p {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .home .home-details h6 {
+        font-size: 24px;
+        margin-top: -1rem;
+
+    }
+
+    .home .home-details .btn {
+        margin-top: 1rem;
+        padding: 28px 32px;
+        font-size: 24px;
+        /* Ukuran tombol lebih besar */
+    }
+
+    .video-wrapper {
+        margin-top: -5%;
+        width: 600px;
+    }
+
+    .video-wrapper iframe {
+        width: 100%;
+        height: 300px;
+    }
+
     .slideshow {
         display: flex;
         flex-direction: column;
@@ -1679,6 +2015,12 @@ body.light hr.separator {
         /* Menyesuaikan posisi vertikal */
         left: 53%;
         /* Menyesuaikan posisi horizontal */
+    }
+
+    .centered-content {
+        max-width: 80%;
+        padding: 0 30px;
+        text-align: justify;
     }
 }
 
@@ -1811,14 +2153,63 @@ body.light hr.separator {
     }
 
     .portfolio .slideshow ul>li {
+
         top: 50%;
         /* Memastikan gambar tetap di tengah vertikal */
         left: 50%;
         /* Memastikan gambar tetap di tengah horizontal */
     }
+
+    .personal-info {
+        margin-right: 50px;
+    }
+
+    .home .home-details {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .home-details h1 {
+        font-size: 28px;
+        line-height: 1;
+
+    }
+
+    .home .home-details p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .home .home-details h6 {
+        font-size: 16px;
+        margin-top: -4rem;
+
+    }
+
+    .home .home-details .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .video-wrapper {
+        margin-top: -3%;
+        width: 85%;
+    }
+
+    .video-wrapper iframe {
+        height: 250px;
+    }
+
+    .centered-content {
+        margin-top: 3%;
+        padding: 0 30px;
+        text-align: justify;
+    }
+
 }
 
-/* Media query untuk layar lebih besar dari 1280px (laptop besar dan desktop) */
+/* Media query untuk layar minimal besar dari 1281px (laptop besar dan desktop) */
 @media (min-width: 1281px) {
     .slideshow {
         display: flex;
@@ -1913,20 +2304,17 @@ body.light hr.separator {
 
     .home .home-details {
         max-width: 70%;
-        /* Mengisi lebih banyak ruang pada layar besar */
         margin: 0 auto;
         padding: 30px;
     }
 
     .home .home-details h1 {
         font-size: 36px;
-        /* Ukuran font lebih besar untuk judul */
         line-height: 1.3;
     }
 
     .home .home-details p {
         font-size: 20px;
-        /* Font lebih besar untuk teks deskriptif */
         line-height: 1.6;
     }
 
@@ -1936,9 +2324,8 @@ body.light hr.separator {
     }
 
     .home .home-details .btn {
-        padding: 16px 32px;
+        padding: 20px 32px;
         font-size: 20px;
-        /* Ukuran tombol lebih besar */
     }
 }
 
@@ -2068,4 +2455,156 @@ body.light hr.separator {
     .main-content .slideshow ul li {
         padding: 0 40px;
     }
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    /* Prevent line breaks */
+}
+
+.marquee-content-left {
+    display: inline-block;
+    animation: marquee-left 10s linear infinite;
+}
+
+.marquee-content-right {
+    display: inline-block;
+    animation: marquee-right 10s linear infinite;
+}
+
+@keyframes marquee-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.tech-stack {
+    display: inline-block;
+    /* Items are placed in a row */
+    text-align: center;
+    width: 150px;
+    /* Adjust width as needed */
+    margin: 0 10px;
+    /* Add spacing between items */
+}
+
+/* Make sure the video is responsive */
+.video-wrapper {
+    border: 4px solid #007bff;
+    /* Border biru */
+    border-radius: 10px;
+    overflow: hidden;
+    /* Untuk mencegah konten keluar dari border */
+    max-width: 90%;
+    /* Memastikan video tetap dalam batas kolom */
+    padding: none;
+    margin: none;
+}
+
+/* Ensure proper spacing and alignment */
+.home-details {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .home-details-container {
+        text-align: center;
+    }
+
+    .home-details {
+        margin-bottom: 10px;
+    }
+
+    .video-container {
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+}
+
+.resume-box {
+    background-color: #100f0f;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(114, 108, 108, 0.1);
+    margin-bottom: 20px;
+}
+
+.resume-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-box li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.resume-box .icon {
+    flex: 0 0 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #252424;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.resume-box .content {
+    margin-left: 20px;
+}
+
+.resume-box .time {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+/* Add some custom styles for the tabs and scrollable content */
+.nav-tabs {
+    margin-bottom: 1rem;
+}
+
+.tab-content {
+    overflow-y: auto;
+    max-height: 500px;
+    /* Adjust height as needed */
+}
+
+.scrollable-content {
+    max-height: 400px;
+    /* Adjust height as needed */
+    overflow-y: auto;
+}
+
+.certificate-thumbnail {
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.certificate-thumbnail:hover {
+    transform: scale(1.05);
 }
