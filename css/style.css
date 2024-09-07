@@ -24,10 +24,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.open-sans-font {
-    font-family: "Open Sans", sans-serif;
-}
-
 hr.separator {
     border-top: 1px solid #252525;
     margin: 70px auto 55px;
@@ -1061,6 +1057,11 @@ body.light hr.separator {
         margin: 0;
         padding: 0;
     }
+
+    .document-report {
+        margin-top: -8%;
+        /* Mengurangi jarak atas Document Report */
+    }
 }
 
 /* Adjust home details for medium screens */
@@ -2022,6 +2023,11 @@ body.light hr.separator {
         padding: 0 30px;
         text-align: justify;
     }
+
+    .document-report {
+        margin-top: -5%;
+        /* Mengurangi jarak atas Document Report */
+    }
 }
 
 /* Bottom Navigation for Tablets and Small Desktops */
@@ -2462,18 +2468,25 @@ body.light hr.separator {
     overflow: hidden;
     position: relative;
     white-space: nowrap;
-    /* Prevent line breaks */
 }
 
 .marquee-content-left {
     display: inline-block;
-    animation: marquee-left 10s linear infinite;
+    animation: marquee-left 8s linear infinite;
 }
 
 .marquee-content-right {
     display: inline-block;
     animation: marquee-right 10s linear infinite;
 }
+
+.marquee-content img {
+    width: 100%;
+    /* Pastikan gambar fleksibel dan tidak melewati kontainer */
+    height: auto;
+    object-fit: cover;
+}
+
 
 @keyframes marquee-left {
     0% {
