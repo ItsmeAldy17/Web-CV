@@ -2472,12 +2472,12 @@ body.light hr.separator {
 
 .marquee-content-left {
     display: inline-block;
-    animation: marquee-left 8s linear infinite;
+    animation: marquee-left 12s linear infinite;
 }
 
 .marquee-content-right {
     display: inline-block;
-    animation: marquee-right 10s linear infinite;
+    animation: marquee-right 12s linear infinite;
 }
 
 .marquee-content img {
